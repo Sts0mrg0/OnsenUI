@@ -40,6 +40,7 @@ import TabbarElement from './elements/ons-tabbar';
 import ToolbarButtonElement from './elements/ons-toolbar-button';
 import ToolbarElement from './elements/ons-toolbar';
 import RangeElement from './elements/ons-range';
+import CardElement from './elements/ons-card';
 
 ons.TemplateElement = TemplateElement;
 ons.IfElement = IfElement;
@@ -81,6 +82,7 @@ ons.TabbarElement = TabbarElement;
 ons.ToolbarButtonElement = ToolbarButtonElement;
 ons.ToolbarElement = ToolbarElement;
 ons.RangeElement = RangeElement;
+ons.CardElement = CardElement;
 
 // fastclick
 window.addEventListener('load', () => {

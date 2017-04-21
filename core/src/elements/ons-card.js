@@ -19,52 +19,31 @@ import autoStyle from '../ons/autostyle';
 import ModifierUtil from '../ons/internal/modifier-util';
 import BaseElement from '../ons/base-element';
 
-const defaultClassName = 'list';
-const scheme = {'': 'list--*'};
+const defaultClassName = 'card';
+const scheme = {'': 'card--*'};
 
 /**
- * @element ons-list
- * @category list
- * @modifier inset
- *   [en]Inset list that doesn't cover the whole width of the parent.[/en]
- *   [ja]親要素の画面いっぱいに広がらないリストを表示します。[/ja]
- * @modifier noborder
- *   [en]A list with no borders at the top and bottom.[/en]
+ * @element ons-card
+ * @category visual
+ * @modifier material
+ *   [en]A card with material design.[/en]
  *   [ja]リストの上下のボーダーが無いリストを表示します。[/ja]
  * @description
- *   [en]Component to define a list, and the container for ons-list-item(s).[/en]
- *   [ja]リストを表現するためのコンポーネント。ons-list-itemのコンテナとして使用します。[/ja]
- * @seealso ons-list-item
- *   [en]ons-list-item component[/en]
- *   [ja]ons-list-itemコンポーネント[/ja]
- * @seealso ons-list-header
- *   [en]ons-list-header component[/en]
- *   [ja]ons-list-headerコンポーネント[/ja]
- * @seealso ons-lazy-repeat
- *   [en]ons-lazy-repeat component[/en]
- *   [ja]ons-lazy-repeatコンポーネント[/ja]
- * @guide lists
- *   [en]Using lists[/en]
- *   [ja]リストを使う[/ja]
- * @guide infinite-scroll
- *   [en]Loading more items on infinite scroll[/en]
- *   [ja]Loading more items on infinite scroll[/ja]
- * @codepen yxcCt
- * @tutorial vanilla/Reference/list
+ *   [en]Component to create a card that displays some information.[/en]
+ *   [ja][/ja]
+ * @tutorial vanilla/Reference/card
  * @example
- * <ons-list>
- *   <ons-list-header>Header Text</ons-list-header>
- *   <ons-list-item>Item</ons-list-item>
- *   <ons-list-item>Item</ons-list-item>
- * </ons-list>
+ * <ons-card>
+ *   <p>Some content</p>
+ * </ons-card>
  */
-export default class ListElement extends BaseElement {
+export default class CardElement extends BaseElement {
 
   /**
    * @attribute modifier
    * @type {String}
    * @description
-   *   [en]The appearance of the list.[/en]
+   *   [en]The appearance of the card.[/en]
    *   [ja]リストの表現を指定します。[/ja]
    */
 
@@ -96,4 +75,4 @@ export default class ListElement extends BaseElement {
   }
 }
 
-customElements.define('ons-list', ListElement);
+customElements.define('ons-card', CardElement);
